@@ -1,7 +1,8 @@
 body,html {
-    margin: 0;
-    padding: 0;
+    margin: 0.5px;
+    padding: 0px;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 iframe { 
@@ -9,3 +10,8 @@ iframe {
     height: 100vh;
     border: none; 
 }
+
+.titlebar {
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+  }

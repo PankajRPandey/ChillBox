@@ -9,17 +9,19 @@ let mainWindow
 function createWindow () {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 715,
-    height: 438,
     maximizable: true,
     frame: false,
-    icon: __dirname + "/app/app100.png",
-    webPreferences: {
-      nodeIntegration: true
-    }
+    transparent: true,
+    icon: __dirname + "/app/cb.png"
   })
 
-  mainWindow.setMenuBarVisibility(false)
+  mainWindow.webContents.on('new-window', function(e, url) {
+    e.preventDefault();
+    require('electron').shell.openExternal(url);
+  });
+
+
+  // mainWindow.setMenuBarVisibility(false)
 
   // and load the html of the app.
   mainWindow.loadURL(`file://${__dirname}/app/test.html`)

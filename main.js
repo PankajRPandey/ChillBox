@@ -15,16 +15,16 @@ function createWindow () {
     icon: __dirname + "/app/cb.png"
   })
 
-  mainWindow.webContents.on('new-window', function(e, url) {
-    e.preventDefault();
-    require('electron').shell.openExternal(url);
-  });
+  // mainWindow.webContents.on('new-window', function(e, url) {
+  //   e.preventDefault();
+  //   require('electron').shell.openExternal(url);
+  // });
 
 
   // mainWindow.setMenuBarVisibility(false)
 
   // and load the html of the app.
-  mainWindow.loadURL(`file://${__dirname}/app/test.html`)
+  mainWindow.loadURL(`file://${__dirname}/app/t1.html`)
   mainWindow.maximize();
 
   // Open the DevTools.

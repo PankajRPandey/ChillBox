@@ -36,7 +36,7 @@ iframe {
     z-index: 0;
     top: 40px;
     left: 0px;
-    background-color: #000;
+    background-color: #ffffff00;
   }
 
   .sidenav {
@@ -65,6 +65,12 @@ iframe {
   .sidenav a:hover {
     color: #fff;
   }
+
+  a[tabindex]:focus {
+    color: #fff;
+    outline: none;
+    font-size:20px;
+}
   
   ::-webkit-scrollbar {
     background-color: rgba(255, 255, 255, 0.10);

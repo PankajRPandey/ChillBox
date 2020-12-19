@@ -31,12 +31,12 @@ iframe {
 
   .hiddendiv {
     position: fixed;
-    height: 100vh;
-    width: 100vw;
+    height: 90vh;
+    width: 250px;
     z-index: 0;
     top: 40px;
     left: 0px;
-    background-color: #ffffff00;
+    background-color: #000;
   }
 
   .sidenav {

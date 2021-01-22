@@ -1,6 +1,6 @@
 $(document).on('click', '.sidenav a', function (event) {
     var change = $(this).attr("data-videoId");
-    $(".yt-vid > iframe").attr("src", "https://www.youtube.com/embed/" + change +"?vq=hd1080&rel=0&modestbranding=1&color=white&autoplay=1");
+    $(".yt-vid > iframe").attr("src", "https://www.youtube.com/embed/" + change +"?vq=hd1080&rel=0&modestbranding=1&color=white&autoplay=1&controls=0");
 });
 
 // $(document).ready(function(){
